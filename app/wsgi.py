@@ -3,8 +3,6 @@ import os
 from flask import Flask
 
 
-
-
 def create_app(package_name, settings=None):
     """
     This function creates the application using the application factory pattern.
