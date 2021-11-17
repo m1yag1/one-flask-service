@@ -28,7 +28,7 @@ ENV FLASK_APP=/app/wsgi.py
 # copy everything from /opt
 COPY --from=builder /opt/venv /opt/venv
 COPY ./bin/docker-entrypoint.sh .
-COPY ./app/ .
+COPY ./app/ ./app
 
 RUN chmod +x /docker-entrypoint.sh
 
