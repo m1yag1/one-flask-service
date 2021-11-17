@@ -1,6 +1,6 @@
-FROM openstax/python3-poetry:20210714.164853 as base
+FROM openstax/python3-base:latest as base
 
-FROM base as builder
+FROM openstax/python3-poetry:latest as builder
 
 # change working directory
 WORKDIR /build
